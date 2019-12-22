@@ -1,0 +1,97 @@
+# Please refer MockDataFile for corresponding input..
+
+number of floors: 2
+Main corridors per floor: 1
+Sub corridors per floor: 3
+
+Default state (when the program is first run)
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+Sensor says: Movement in Floor 1 SUB corridor 2
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : OFF
+Sub Corridor 2  LIGHT : ON AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+Sensor says: Movement in Floor 1 SUB corridor 1
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : ON AC : OFF
+Sub Corridor 2  LIGHT : ON AC : OFF
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+Sensor says: Movement in Floor 2 SUB corridor 3
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : ON AC : OFF
+Sub Corridor 2  LIGHT : ON AC : OFF
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : OFF
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : ON AC : ON
+
+Sensor says: No movement in Floor 1 SUB corridor 2 for 1 minute(s)
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 2  LIGHT : OFF AC : OFF
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : OFF
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : ON AC : ON
+
+Sensor says: No movement in Floor 2 SUB corridor 3 for 2 minute(s)
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 2  LIGHT : OFF AC : OFF
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+Sensor says: No movement in Floor 1 SUB corridor 1 for 1 minute(s)
+--------Floor 1----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
+--------Floor 2----------
+Main Corridor 1  LIGHT : ON AC : ON
+Sub Corridor 1  LIGHT : OFF AC : ON
+Sub Corridor 2  LIGHT : OFF AC : ON
+Sub Corridor 3  LIGHT : OFF AC : ON
+
