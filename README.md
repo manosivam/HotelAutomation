@@ -45,18 +45,18 @@ Hotel Management wants to optimise the power consumption without any disturbance
 _they are ordered in sequence to understand the flow_
 
 - [PerFloorCriteria](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/criteria/PerFloorCriteria.java)
-  - ```
+   ```
     private EnumMap<MovementStatus, CorridorBasedElectronicPowerStatusMap> subCorridorMovementPlan; 
 	private EnumMap<MovementStatus, CorridorBasedElectronicPowerStatusMap> mainCorridorMovementPlan;
     ```
   - The plan can be loaded from the file as well. But I have initialized the given plan into system. 
   
 - [ElectronicPowerSwitchActionMap](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/criteria/ElectronicPowerSwitchActionMap.java)
-  - ```
+   ```
     private EnumMap<ElectronicItemType,Integer> electronicPowerStatus;
     ```
   - ElectronicItemType is an enum of electronics items, while Integer contains flags based on which action are defined as shown below. 
-    - ```
+     ```
       1  denotes perform action on same corridor.
       2  denotes perform action on different or same corridor. [Try different corridor, if not possible act on same corridor]
       4  ON -> OFF .. If switched On, toggle it to OFF.
