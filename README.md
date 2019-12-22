@@ -3,6 +3,7 @@
 
 ## Use case
 Hotel Management wants to optimise the power consumption without any disturbances to customers. Sensors are deployed at corridors and on default state of the electronics are fed to the system. On Movement, it should switch on/off the electronic item(s) and maintain a required power consumption at any point of time. 
+`To understand the implementation [click here for implemetation details](https://github.com/manosivam/HotelAutomation#implementation-details)`
 
 #### Entities 
 - [Building](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/Building.java) Singleton class
