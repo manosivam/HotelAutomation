@@ -38,12 +38,12 @@ public class PowerController implements IPowerController, PowerControllerSensorI
 		return powerControllerInstance;
 	}
 
+	// This captures the signal from sensor. 
+	// Adjust power based on the criteria rule.
 	@Override
 	public void captureSensorSignal(int floorNumber, CorridorType corridorType, int corridorNumber, boolean hasMovementDetected, int minutesWithNoMomentsDetected)
 	{
-		// This captures the signal from sensor. 
-		// Adjust power based on the criteria rule.
-		// Assuming the sensor works only in night-time slot for now.
+		
 		if(floorNumber < 1 || floorNumber> buildingInstance.getFloors().size())
 		{
 			throw new IllegalArgumentException("Invalid floor number.."+ floorNumber);
@@ -51,6 +51,7 @@ public class PowerController implements IPowerController, PowerControllerSensorI
 		handleCorridorMovements(buildingInstance.getFloors().get(floorNumber-1),corridorType, corridorNumber, hasMovementDetected, minutesWithNoMomentsDetected);
 	}
 
+	//This checks for the active hours for power controller and based on movement detected, it will retrive the criteria plan
 	private void handleCorridorMovements(Floor floor, CorridorType corridorType, int corridorNumber, boolean hasMovementDetected,
 			int minutesWithNoMovements) {
 
@@ -92,6 +93,8 @@ public class PowerController implements IPowerController, PowerControllerSensorI
 		}
 	}
 
+	//This adjusts the power based on the Corridor based plan
+	// returns power consumption after the power adjustment. 
 	@Override
 	public int adjustPower(Floor floor, CorridorType corridorType, int corridorNumber, CorridorBasedElectronicPowerStatusMap rule) {
 
@@ -124,6 +127,7 @@ public class PowerController implements IPowerController, PowerControllerSensorI
 		return floor.getPowerConsumed();
 	}
 
+	//Based on the ActionFlag, this handles the electronic both power on and power off generically. 
 	private Boolean controlElectronic(List<Corridor> corridorsToControl, int corridorNumber, Integer actionFlag, ElectronicItemType electronicTypeToActOn) {
 		Boolean turnItOn = null, status = null;
 		if((actionFlag & ActionConstants.SAME_CORRRIDOR) == ActionConstants.SAME_CORRRIDOR)
