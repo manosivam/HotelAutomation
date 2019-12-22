@@ -17,7 +17,7 @@ import com.myhotel.floor.Floor;
 import com.myhotel.utils.Logger;
 import com.myhotel.utils.Utils;
 
-public class PowerController implements IPowerController, IPowerControllerToReadSignal {
+public class PowerController implements IPowerController, PowerControllerSensorInterface {
 
 	private Building buildingInstance;
 	private static IPowerController powerControllerInstance;

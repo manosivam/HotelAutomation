@@ -1,7 +1,7 @@
 package com.myhotel;
 
 import com.myhotel.floor.CorridorType;
-import com.myhotel.powerAutomation.IPowerControllerToReadSignal;
+import com.myhotel.powerAutomation.PowerControllerSensorInterface;
 import com.myhotel.powerAutomation.PowerController;
 
 public class Sensor implements ISensor {
@@ -10,10 +10,10 @@ public class Sensor implements ISensor {
 	private int numberOfMinWithNoMovement;
 	private int floorNumber, corridorNumber;
 	private CorridorType corridorType;
-	private IPowerControllerToReadSignal pController;
+	private PowerControllerSensorInterface pController;
 
 	public Sensor() {
-		pController = (IPowerControllerToReadSignal) PowerController.getInstance();
+		pController = (PowerControllerSensorInterface) PowerController.getInstance();
 	}
 
 	@Override
