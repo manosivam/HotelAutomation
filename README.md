@@ -74,7 +74,8 @@ _they are ordered in sequence to understand the flow_
  
 ### Automation and mock data classes for unit testing. 
 
-
+- [Automation](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/automation/Automation.java) Main class where program starts. 
+  - Read the input from _[MockDataFile](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/automation/MockDataFile)_ and feed [ISensor](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/ISensor.java)'s [sendSignal](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/Sensor.java#L20) which inturn calls [PowerControllerSensorInterface](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/powerAutomation/PowerControllerSensorInterface.java)'s [captureSensorSignal](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/powerAutomation/PowerController.java#L44)
 
 ### sample output. 
 
