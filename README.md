@@ -78,5 +78,8 @@ _they are ordered in sequence to understand the flow_
 
 ### sample output. 
 
+- [MockDataFile](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/automation/MockDataFile) _contains mock data for the program_
+- [SampleOutput.txt](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/automation/SampleOutput.txt) _Please refer [MockDataFile](https://github.com/manosivam/HotelAutomation/blob/master/HotelPowerAutomation/src/com/myhotel/automation/MockDataFile) for inputs
+
 
 
