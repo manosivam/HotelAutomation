@@ -1,7 +1,7 @@
 # HotelAutomation
  Automatic power control in hotel building based on per floor plan
 
-## Use case:
+## Use case
 Hotel Management wants to optimise the power consumption without any disturbances to customers. Sensors are deployed at corridors and on default state of the electronics are fed to the system. On Movement, it should switch on/off the electronic item(s) and maintain a required power consumption at any point of time. 
 
 #### Entities 
