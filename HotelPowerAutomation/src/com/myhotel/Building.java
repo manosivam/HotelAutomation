@@ -13,7 +13,7 @@ public class Building {
 
 	private Building() {}
 
-	//assuming all floors having same number of main and sub corridors..
+	
 	public static Building createFloorsAndInitBuilding(int nFloors, int nMainCorridors, int nSubCorridors)
 	{
 		buildingInstance = new Building();
